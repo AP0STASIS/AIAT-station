@@ -124,3 +124,36 @@
     - Hammer
     - Gaslight
     - Firefighter
+
+# The Custom Shipyard Console
+- type: entity
+  id: CustomMothershipComputer
+  parent: BaseMothershipComputer
+  description: Used to recall custom-spec shuttles that have been approved for bluespace storage.
+  name: custom shipyard console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Aspira
+    - Celtic
+    - Spearhead
+    - Prototype IAR Construct
+
+# AIAT DEBUG Shipyard
+- type: entity
+  id: FrontierMothershipComputer
+  parent: BaseMothershipComputer
+  description: Debug.
+  name: Itzi's shipyard console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Adder
+    - Surveyor
+    - Prospector
+    - Skipper
+    - Druid
+    - Cryophage
+    - Omega
+    - Targe
+    - Hound
