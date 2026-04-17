@@ -1,0 +1,48 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Original Creator Info
+# GitHub: dustylens (https://github.com/dustylens)
+# Discord: dustylens
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Celtic
+  parent: BaseVessel
+  name: FSN Celtic
+  description: Funny skunk's ship.
+  price: 45000 # 15% t2.
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_NF/Shuttles/celtic.yml
+  guidebookPage: NULL
+  class:
+  - Botany
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Celtic
+  mapName: 'FSB Celtic'
+  mapPath: /Maps/_NF/Shuttles/celtic.yml
+  minPlayers: 0
+  stations:
+    Celtic:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Celtic {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
