@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 04/16/2026 23:46:45
+  time: 04/17/2026 21:25:28
   entityCount: 95
 maps: []
 grids:
@@ -70,6 +70,50 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,0:
+            0: 375
+            1: 17408
+          0,-1:
+            0: 28928
+            1: 1088
+          -1,0:
+            0: 204
+            1: 17408
+          -1,-1:
+            0: 49152
+            1: 1088
+        uniqueMixes:
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.824879
+          - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          immutable: True
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -235,88 +279,88 @@ entities:
       parent: 1
 - proto: CableApcExtension
   entities:
-  - uid: 27
+  - uid: 26
     components:
     - type: Transform
       pos: 1.5,2.5
       parent: 1
-  - uid: 28
+  - uid: 27
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
-  - uid: 29
+  - uid: 28
     components:
     - type: Transform
       pos: 0.5,1.5
       parent: 1
-  - uid: 30
+  - uid: 29
     components:
     - type: Transform
       pos: 0.5,0.5
       parent: 1
-  - uid: 31
+  - uid: 30
     components:
     - type: Transform
       pos: 0.5,-0.5
       parent: 1
-  - uid: 32
+  - uid: 31
     components:
     - type: Transform
       pos: 0.5,2.5
       parent: 1
 - proto: CableHV
   entities:
-  - uid: 33
+  - uid: 32
     components:
     - type: Transform
       pos: -0.5,-2.5
       parent: 1
-  - uid: 34
+  - uid: 33
     components:
     - type: Transform
       pos: 1.5,-1.5
       parent: 1
-  - uid: 35
+  - uid: 34
     components:
     - type: Transform
       pos: 1.5,-2.5
       parent: 1
-  - uid: 36
+  - uid: 35
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
 - proto: CableMV
   entities:
-  - uid: 37
+  - uid: 36
     components:
     - type: Transform
       pos: 1.5,0.5
       parent: 1
-  - uid: 38
+  - uid: 37
     components:
     - type: Transform
       pos: 1.5,-0.5
       parent: 1
-  - uid: 39
+  - uid: 38
     components:
     - type: Transform
       pos: 1.5,2.5
       parent: 1
-  - uid: 40
+  - uid: 39
     components:
     - type: Transform
       pos: 1.5,-1.5
       parent: 1
-  - uid: 41
+  - uid: 40
     components:
     - type: Transform
       pos: 1.5,1.5
       parent: 1
 - proto: ClosetWall
   entities:
-  - uid: 42
+  - uid: 41
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -326,14 +370,14 @@ entities:
       fixtures: {}
 - proto: ComputerTabletopShuttle
   entities:
-  - uid: 43
+  - uid: 42
     components:
     - type: Transform
       pos: 0.5,2.5
       parent: 1
 - proto: ComputerWallmountCrewMonitoring
   entities:
-  - uid: 26
+  - uid: 43
     components:
     - type: Transform
       pos: -0.5,2.5
@@ -512,28 +556,28 @@ entities:
       parent: 1
 - proto: PowerCellMicroreactor
   entities:
-  - uid: 75
+  - uid: 72
     components:
     - type: Transform
       pos: 1.5112593,0.42714828
       parent: 1
 - proto: PoweredlightRed
   entities:
-  - uid: 72
+  - uid: 73
     components:
     - type: Transform
       pos: 0.5,2.5
       parent: 1
 - proto: RPEDT4Filled
   entities:
-  - uid: 73
+  - uid: 74
     components:
     - type: Transform
       pos: 1.078125,1
       parent: 1
 - proto: SalineMedicalVialBluespace
   entities:
-  - uid: 74
+  - uid: 75
     components:
     - type: Transform
       pos: -0.0625,0.109375

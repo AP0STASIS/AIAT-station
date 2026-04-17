@@ -13,19 +13,20 @@
   parent: BaseVessel
   name: VS Omega
   description: Omega.
-  price: 600 # 17518 0.06 18569.08
-  category: Micro
-  shuttlePath: /Maps/_NF/Shuttles/omega.yml
+  price: 600 
+  category: Small
+  group: Sr
+  shuttlePath: /Maps/_NF/Shuttles/Sr/omega.yml
   guidebookPage: NULL
   class:
-  - Medical
+  - Civilian
   engine:
-  - APU
+  - Plasma
 
 - type: gameMap
   id: Omega
   mapName: 'VS Omega'
-  mapPath: /Maps/_NF/Shuttles/omega.yml
+  mapPath: /Maps/_NF/Shuttles/Sr/omega.yml
   minPlayers: 0
   stations:
     Omega:
@@ -36,8 +37,3 @@
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
-        - type: StationJobs
-          availableJobs:
-            ContractorInterview: [ 0, 0 ]
-            PilotInterview: [ 0, 0 ]
-            MercenaryInterview: [ 0, 0 ]
