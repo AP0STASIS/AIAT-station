@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Spearhead
+  parent: BaseVessel
+  name: VG Spearhead
+  description: Kal shittle.
+  price: 16000 # 17518 0.06 18569.08
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/spearhead.yml
+  guidebookPage: NULL
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Spearhead
+  mapName: 'VG Spearhead'
+  mapPath: /Maps/_NF/Shuttles/spearhead.yml
+  minPlayers: 0
+  stations:
+    Spearhead:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Spearhead {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
