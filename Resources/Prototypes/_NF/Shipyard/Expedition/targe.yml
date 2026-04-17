@@ -1,0 +1,45 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Targe
+  parent: BaseVessel
+  name: VS Targe
+  description: I've sawn an Aegis in half.
+  price: 35000
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_NF/Shuttles/Expedition/targe.yml
+  guidebookPage: Null
+  class:
+  - Expedition
+  - Civilian
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Targe
+  mapName: 'VS Targe'
+  mapPath: /Maps/_NF/Shuttles/Expedition/targe.yml
+  minPlayers: 0
+  stations:
+    Targe:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Targe {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
