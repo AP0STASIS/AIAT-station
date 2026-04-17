@@ -1,0 +1,45 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Aspira
+  parent: BaseVessel
+  name: HSF Aspira
+  description: This thing probably works but idfk
+  price: 50000
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_NF/Shuttles/Expedition/aspira.yml
+  guidebookPage: Null
+  class:
+  - Expedition
+  - Civilian
+  engine:
+  - AME
+
+- type: gameMap
+  id: Aspira
+  mapName: 'HSF Aspira'
+  mapPath: /Maps/_NF/Shuttles/Expedition/aspira.yml
+  minPlayers: 0
+  stations:
+    Aspira:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Aspira {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
