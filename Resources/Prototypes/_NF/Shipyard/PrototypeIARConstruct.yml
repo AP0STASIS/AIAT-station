@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: PrototypeIARConstruct
+  parent: BaseVessel
+  name: IAR Prototype Construct
+  description: Yuuup
+  price: 18000 # 17518 0.06 18569.08
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/PrototypeIARConstruct.yml
+  guidebookPage: NULL
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: PrototypeIARConstruct
+  mapName: 'IAR Prototype Construct'
+  mapPath: /Maps/_NF/Shuttles/PrototypeIARConstruct.yml
+  minPlayers: 0
+  stations:
+    PrototypeIARConstruct:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'PrototypeIARConstruct {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
