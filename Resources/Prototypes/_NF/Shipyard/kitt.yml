@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Kitt
+  parent: BaseVessel
+  name: CES Kitt
+  description: A budget mining and recovery shuttle for corporations unwilling to operate outside of a shoestring budget. Brought to you by the Far Star Corporation!
+  price: 15000 # 17518 0.06 18569.08
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/kitt.yml
+  guidebookPage: NULL
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Kitt
+  mapName: 'CES Kitt'
+  mapPath: /Maps/_NF/Shuttles/kitt.yml
+  minPlayers: 0
+  stations:
+    Kitt:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Kitt {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

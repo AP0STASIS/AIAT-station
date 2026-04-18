@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Plover
+  parent: BaseVessel
+  name: CES Plover
+  description: Pluey
+  price: 40000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/plover.yml
+  guidebookPage: NULL
+  class:
+  - Atmospherics
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Plover
+  mapName: 'CES Plover'
+  mapPath: /Maps/_NF/Shuttles/plover.yml
+  minPlayers: 0
+  stations:
+    Plover:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Plover {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
