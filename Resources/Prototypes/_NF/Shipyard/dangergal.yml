@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Danger Gal
+  parent: BaseVessel
+  name: HSB Danger Gal
+  description: Aw yeah
+  price: 35000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/dangergal.yml
+  guidebookPage: ShipyardDanger Gal
+  class:
+  - Civilian
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Danger Gal
+  mapName: 'HSB Danger Gal'
+  mapPath: /Maps/_NF/Shuttles/dangergal.yml
+  minPlayers: 0
+  stations:
+    Danger Gal:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Danger Gal {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

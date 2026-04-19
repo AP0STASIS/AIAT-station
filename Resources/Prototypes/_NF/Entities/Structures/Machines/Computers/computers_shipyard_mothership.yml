@@ -140,6 +140,7 @@
     - Prototype IAR Construct
     - Plover
     - Kitt
+    - Danger Gal
 
 # AIAT DEBUG Shipyard
 - type: entity
@@ -153,6 +154,7 @@
     - Adder
     - Surveyor
     - Prospector
+    - Gaslight
     - Skipper
     - Druid
     - Cryophage
