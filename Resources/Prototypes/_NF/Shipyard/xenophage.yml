@@ -1,0 +1,35 @@
+- type: vessel
+  parent: BaseVessel
+  id: Xenophage
+  name: VS Xenophage
+  description: A Small medical support vessel designed for cryogenic deployment.
+  price: 70000 #62702 0.2 75242.4
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_NF/Shuttles/xenophage.yml
+  guidebookPage: NULL
+  class:
+  - Medical
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Xenophage
+  mapName: 'VS Xenophage'
+  mapPath: /Maps/_NF/Shuttles/xenophage.yml
+  minPlayers: 0
+  stations:
+    Xenophage:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Xenophage {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
+

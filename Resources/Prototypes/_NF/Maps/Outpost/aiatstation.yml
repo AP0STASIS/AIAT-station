@@ -1,17 +1,17 @@
 - type: gameMap
-  id: Frontier
-  mapName: 'Frontier Outpost'
-  mapPath: /Maps/_NF/Outpost/frontier.yml
+  id: AIATStation
+  mapName: 'AIAT Station'
+  mapPath: /Maps/_NF/Outpost/aiatstation.yml
   minPlayers: 0
   maxPlayers: 100
   randomRotation: false
   maxRandomOffset: 0
   stations:
-    Frontier:
+    AIATStation:
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Frontier Outpost'
+          mapNameTemplate: 'AIAT Station'
 #          nameGenerator:
 #            !type:NanotrasenNameGenerator
 #            prefixCreator: '14'
@@ -22,16 +22,12 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
+            StationRepresentative: [ 1, 1 ]
+            DirectorOfCare: [ 1, 1 ]
             Contractor: [ -1, -1 ]
             Pilot: [ -1, -1 ]
             Mercenary: [ -1, -1 ]
             Borg: [ -1, -1 ]
-            StationRepresentative: [ 1, 1 ]
-            StationTrafficController: [ 1, 1 ]
-            SecurityGuard: [ 1, 1 ]
-            Valet: [ 1, 1 ]
-            NFJanitor: [ 1, 1 ]
-            MailCarrier: [ 1, 1 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

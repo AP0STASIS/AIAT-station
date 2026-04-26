@@ -134,29 +134,37 @@
   components:
   - type: ShipyardListing
     shuttles:
+    # Juliet
     - Aspira
+    - Danger Gal
+    # Koda
     - Celtic
+    # Kal
     - Spearhead
-    - Prototype IAR Construct
+    # Nuka
+    - Callisto
+    # Rory
     - Plover
     - Kitt
-    - Danger Gal
+    # ITZI
+    - Targe
+    - KBBQ
+    - Cryophage
+    - Drifter
+    - Xenophage
 
 # AIAT DEBUG Shipyard
 - type: entity
   id: FrontierMothershipComputer
   parent: BaseMothershipComputer
   description: Debug.
-  name: Itzi's shipyard console
+  name: debug shipyard console
   components:
   - type: ShipyardListing
     shuttles:
-    - Adder
-    - Surveyor
-    - Prospector
-    - Gaslight
-    - Skipper
-    - Druid
     - Cryophage
+    - Xenophage
     - Omega
     - Targe
+    - KBBQ
+    - Drifter

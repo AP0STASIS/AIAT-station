@@ -1,39 +1,39 @@
 # Author Info
-# GitHub: N/A
-# Discord: N/A
+# GitHub: ???
+# Discord: ???
 
 # Maintainer Info
-# GitHub: N/A
-# Discord: N/A
+# GitHub: ???
+# Discord: ???
 
 # Shuttle Notes:
 #
 - type: vessel
-  id: PrototypeIARConstruct
+  id: KBBQ
   parent: BaseVessel
-  name: IAR Prototype Construct
-  description: Yuuup
-  price: 18000 # 17518 0.06 18569.08
-  category: Medium
+  name: VS KBBQ
+  description: Saranghae
+  price: 34500
+  category: Small
   group: Shipyard
-  shuttlePath: /Maps/_NF/Shuttles/PrototypeIARConstruct.yml
+  shuttlePath: /Maps/_NF/Shuttles/KBBQ.yml
   guidebookPage: NULL
   class:
-  - Civilian
+  - Kitchen
   engine:
   - Plasma
 
 - type: gameMap
-  id: PrototypeIARConstruct
-  mapName: 'IAR Prototype Construct'
-  mapPath: /Maps/_NF/Shuttles/PrototypeIARConstruct.yml
+  id: KBBQ
+  mapName: 'VS KBBQ'
+  mapPath: /Maps/_NF/Shuttles/KBBQ.yml
   minPlayers: 0
   stations:
-    PrototypeIARConstruct:
+    KBBQ:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'PrototypeIARConstruct {1}'
+          mapNameTemplate: 'KBBQ {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

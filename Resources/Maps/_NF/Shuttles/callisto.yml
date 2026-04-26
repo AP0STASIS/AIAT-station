@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 04/16/2026 09:39:32
+  time: 04/24/2026 20:19:59
   entityCount: 142
 maps: []
 grids:
@@ -156,7 +156,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Prototype IAR Construct
+      id: Callisto
 - proto: AirlockExternalGlass
   entities:
   - uid: 2

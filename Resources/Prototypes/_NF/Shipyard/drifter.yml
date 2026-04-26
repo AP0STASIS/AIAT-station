@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: AP0STASIS
+# Discord: AP0STASIS
+
+# Maintainer Info
+# GitHub: AP0STASIS
+# Discord: AP0STASIS
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Drifter
+  parent: BaseVessel
+  name: VS Drifter
+  description: fucking shittle
+  price: 35000 # 15898 0.05 16692.9
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/drifter.yml
+  guidebookPage: NULL
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: VS Drifter
+  mapName: 'VS Drifter'
+  mapPath: /Maps/_NF/Shuttles/drifter.yml
+  minPlayers: 0
+  stations:
+    Drifter:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Drifter {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

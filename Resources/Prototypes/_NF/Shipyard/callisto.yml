@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Callisto
+  parent: BaseVessel
+  name: IAR Callisto
+  description: Yuuup
+  price: 18000 # 17518 0.06 18569.08
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/callisto.yml
+  guidebookPage: NULL
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Callisto
+  mapName: 'IAR Callisto'
+  mapPath: /Maps/_NF/Shuttles/callisto.yml
+  minPlayers: 0
+  stations:
+    Callisto:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Callisto {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
