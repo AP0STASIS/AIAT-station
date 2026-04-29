@@ -1,0 +1,39 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: R35-CU3
+  parent: BaseVessel
+  name: VS R35-CU3
+  description: Omega.
+  price: 600 
+  category: Small
+  group: Sr
+  shuttlePath: /Maps/_NF/Shuttles/Sr/omegamedical.yml
+  guidebookPage: NULL
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: R35-CU3
+  mapName: 'VS R35-CU3'
+  mapPath: /Maps/_NF/Shuttles/Sr/omegamedical.yml
+  minPlayers: 0
+  stations:
+    Omega:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'R35-CU3 {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'

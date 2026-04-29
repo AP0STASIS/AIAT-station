@@ -9,29 +9,29 @@
 # Notes:
 # The local Science lab
 - type: pointOfInterest
-  id: AnomalousGeode
+  id: aiatlab
   parent: BasePOI
-  name: 'Anomalous Geode'
+  name: 'Anomalous Lab'
   minimumDistance: 2100
   maximumDistance: 3800
   spawnGroup: ScienceLab
-  gridPath: /Maps/_NF/POI/anomalousgeode.yml
+  gridPath: /Maps/_NF/POI/aiatlab.yml
   addComponents:
   - type: SolarPoweredGrid
     trackOnInit: true
     doNotCull: true
 
 - type: gameMap
-  id: AnomalousGeode
-  mapName: 'Anomalous Geode'
-  mapPath: /Maps/_NF/POI/anomalousgeode.yml
+  id: aiatlab
+  mapName: 'Anomalous Lab'
+  mapPath: /Maps/_NF/POI/aiatlab.yml
   minPlayers: 0
   stations:
-    AnomalousGeode:
+    aiatlab:
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Anomalous Geode'
+          mapNameTemplate: 'Anomalous Lab'
         - type: StationJobs
           availableJobs: {}
         - type: StationDeadDropHintExempt

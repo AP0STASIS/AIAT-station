@@ -1,0 +1,39 @@
+# Author Info
+# GitHub: N/A
+# Discord: N/A
+
+# Maintainer Info
+# GitHub: N/A
+# Discord: N/A
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: 547-V463
+  parent: BaseVessel
+  name: VS 547-V463
+  description: Omega.
+  price: 600 
+  category: Small
+  group: Sr
+  shuttlePath: /Maps/_NF/Shuttles/Sr/omegasalvage.yml
+  guidebookPage: NULL
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: 547-V463
+  mapName: 'VS 547-V463'
+  mapPath: /Maps/_NF/Shuttles/Sr/omegasalvage.yml
+  minPlayers: 0
+  stations:
+    Omega:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '547-V463 {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
