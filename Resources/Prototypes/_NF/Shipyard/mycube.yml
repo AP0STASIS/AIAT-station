@@ -1,0 +1,35 @@
+- type: vessel
+  parent: BaseVessel
+  id: mycube
+  name: VS Cube
+  description: shittalis
+  price: 70000 #62702 0.2 75242.4
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_NF/Shuttles/mycube.yml
+  guidebookPage: NULL
+  class:
+  - Medical
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: mycube
+  mapName: 'VS Cube'
+  mapPath: /Maps/_NF/Shuttles/mycube.yml
+  minPlayers: 0
+  stations:
+    mycube:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Cube {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
+

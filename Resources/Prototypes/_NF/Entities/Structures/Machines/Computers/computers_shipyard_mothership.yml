@@ -152,6 +152,7 @@
     - Cryophage
     - Drifter
     - Xenophage
+    - Cube
 
 # AIAT DEBUG Shipyard
 - type: entity
@@ -170,3 +171,4 @@
     - Targe
     - KBBQ
     - Drifter
+    - Cube

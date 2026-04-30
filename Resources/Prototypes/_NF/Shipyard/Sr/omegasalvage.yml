@@ -29,7 +29,7 @@
   mapPath: /Maps/_NF/Shuttles/Sr/omegasalvage.yml
   minPlayers: 0
   stations:
-    Omega:
+    547-V463:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

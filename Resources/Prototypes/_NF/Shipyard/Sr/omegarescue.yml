@@ -16,7 +16,7 @@
   price: 600 
   category: Small
   group: Sr
-  shuttlePath: /Maps/_NF/Shuttles/Sr/omegamedical.yml
+  shuttlePath: /Maps/_NF/Shuttles/Sr/omegarescue.yml
   guidebookPage: NULL
   class:
   - Civilian
@@ -26,10 +26,10 @@
 - type: gameMap
   id: R35-CU3
   mapName: 'VS R35-CU3'
-  mapPath: /Maps/_NF/Shuttles/Sr/omegamedical.yml
+  mapPath: /Maps/_NF/Shuttles/Sr/omegarescue.yml
   minPlayers: 0
   stations:
-    Omega:
+    R35-CU3:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
